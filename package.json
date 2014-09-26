@@ -1,9 +1,28 @@
 {
   "name": "generator-tt-newsapps",
   "version": "0.0.1",
-  "description": "",
+  "description": "Scaffold out a Texas Tribune web app or graphic.",
+  "license": "MIT",
+  "repository": "texastribune/generator-tt-newsapps",
+  "author": "The Texas Tribune",
+  "main": "app/index.js",
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.2.10"
+  },
+  "files": [
+    "app",
+    "graphics"
+  ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "web",
+    "app",
+    "front-end",
+    "graphics",
+    "grunt",
+    "journalism",
+    "newsapps"
   ],
   "author": "Texas Tribune News Apps",
   "license": "MIT",
@@ -11,5 +30,11 @@
     "chalk": "^0.5.1",
     "yeoman-generator": "^0.17.2",
     "yosay": "^0.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^1.21.4"
+  },
+  "peerDependencies": {
+    "yo": ">=1.2.0"
   }
 }
