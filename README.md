@@ -19,7 +19,7 @@ And so much more! Please take a look at each generator's `package.json` and `Gru
 ## Install
 
 ```sh
-$ npm install -g generator-webapp
+$ npm install -g generator-tt-newsapps
 ```
 The News Apps Generator depends on [Node.js](http://nodejs.org/) and [npm](http://npmjs.org/).
 
