@@ -1,0 +1,8 @@
+<div id="<% _.slugify(appname) %>-graphic"></div>
+<!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/aight/1.2.2/aight.min.js"></script>
+<![endif]-->
+<script src="//s3.amazonaws.com/graphics.texastribune.org/dailies/vendor/<% _.slugify(appname) %>/pym.js"></script>
+<script>
+    var pymParent = new pym.Parent('<% _.slugify(appname) %>-graphic', '//s3.amazonaws.com/graphics.texastribune.org/dailies/<% _.slugify(appname) %>/index.html', {});
+</script>

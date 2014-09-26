@@ -1,0 +1,15 @@
+{
+  "name": "generator-tt-newsapps",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Texas Tribune News Apps",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^0.5.1",
+    "yeoman-generator": "^0.17.2",
+    "yosay": "^0.3.0"
+  }
+}

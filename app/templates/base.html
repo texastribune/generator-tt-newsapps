@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ META.project_title }} | The Texas Tribune</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+</head>
+<body>
+
+<header class="masthead">
+  <div class="container">
+    <div class="branding">
+      <a href="//www.texastribune.org/"><img class="trib-logo" alt="The Texas Tribune" src="/images/tt-logo-white.png"></a>
+    </div>
+  </div>
+</header>
+<% if (grandHeader) { %>
+<div class="banner">
+  <div class="grand-header-image"></div>
+  <header class="grand-header content-block">
+    <h1><a href="/">{{ META.project_title }}</a></h1>
+  </header>
+</div>
+<% } %>
+{% block content %}{% endblock %}
+
+<% if (footerType === 'basic') { %>
+<footer class="tribune-footer">
+<div class="container">
+  <nav class="first-nav">
+    <ul>
+      <li>&copy; 2014 <a href="http://www.texastribune.org/">The Texas Tribune</a></li>
+    </ul>
+  </nav>
+  <nav class="last-nav">
+    <ul>
+      <li><a href="http://www.texastribune.org/about/">About Us</a></li>
+      <li><a href="http://www.texastribune.org/contact/">Contact Us</a></li>
+      <li><a href="http://www.texastribune.org/support-us/donors-and-members/">Who Funds Us?</a></li>
+      <li><a href="http://www.texastribune.org/terms-of-service/">Terms of Service</a></li>
+      <li><a href="http://www.texastribune.org/ethics/">Code of Ethics</a></li>
+      <li><a href="http://www.texastribune.org/privacy/">Privacy Policy</a></li>
+      <li class="donor-item"><a href="https://www.texastribune.org/join/">Donate</a></li>
+    </ul>
+  </nav>
+</div>
+</footer>
+<% } else if (footerType === 'newsapps') { %>
+<footer class="tribune-footer">
+  TODO
+</footer>
+<% } %>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<!-- endbower -->
+<!-- endbuild -->
+
+<script>
+  (function(c,o,r,g,i,s){c.GoogleAnalyticsObject=g;c[g]||(c[g]=
+  function(){(c[g].q=c[g].q||[]).push(arguments)});c[g].g=+new Date;
+  i=o.createElement(r);s=o.getElementsByTagName(r)[0];
+  i.src='//www.google-analytics.com/analytics.js';
+  s.parentNode.insertBefore(i,s)}(window,document,'script','ga'));
+  ga('create','UA-9827490-7');ga('send','pageview');
+</script>
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

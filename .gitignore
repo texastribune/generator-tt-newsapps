@@ -1,0 +1,5 @@
+# OSX things
+.DS_Store
+
+# node things
+node_modules

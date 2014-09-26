@@ -1,0 +1,8 @@
+{
+  "name": "<%= _.slugify(appname) %>",
+  "private": true,
+  "dependencies": {
+    "jquery": "1",
+    "newsapps-styles": "texastribune/newsapps-styles#0.3"
+  }
+}
