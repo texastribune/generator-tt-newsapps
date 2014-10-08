@@ -30,12 +30,16 @@ So what do you wanna create? Are you developing a web app or a web graphic? The 
 The web app generator is the default. Create the folder you want your project to live in then run the following command inside of it.
 
 ```sh
+$ mkdir YOURCOOLPROJECT
+$ cd YOURCOOLPROJECT
 $ yo tt-newsapps
 ```
 
 If you are creating a web graphic, use this command instead.
 
 ```sh
+$ mkdir YOURCOOLPROJECT
+$ cd YOURCOOLPROJECT
 $ yo tt-newsapps:graphics
 ```
 
