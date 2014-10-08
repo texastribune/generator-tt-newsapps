@@ -1,0 +1,6 @@
+{
+  "META": {
+    "project_name": "<%= appname %>",
+    "description": ""
+  }
+}
