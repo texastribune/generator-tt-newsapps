@@ -34,6 +34,10 @@ module.exports = yeoman.generators.Base.extend({
     }.bind(this));
   },
 
+  makefile: function() {
+    this.template('Makefile');
+  },
+
   gruntfile: function() {
     this.template('Gruntfile.js');
   },
