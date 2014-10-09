@@ -20,6 +20,7 @@
   "jquery": true,
   "predef":[
     "_",
-    "L"
+    "L",
+    "JST"
   ]
 }

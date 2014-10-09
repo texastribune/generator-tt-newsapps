@@ -63,6 +63,10 @@ module.exports = yeoman.generators.Base.extend({
     this.copy('jshintrc', '.jshintrc');
   },
 
+  jshintignore: function() {
+    this.copy('jshintignore', '.jshintignore');
+  }
+
   editorconfig: function() {
     this.copy('editorconfig', '.editorconfig');
   },
