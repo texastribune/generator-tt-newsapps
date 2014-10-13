@@ -45,6 +45,14 @@ $ yo tt-newsapps:graphics
 
 After installing, run `grunt serve` to preview what you generator has set up. Now get to work! When it comes time to ship to production, use `grunt build` to prepare `dist` folder.
 
+## Deployment
+
+For deloyment you will need `aws-cli`. Follow [this](http://docs.aws.amazon.com/cli/latest/userguide/installing.html) guide to install it and when ready, just run:
+
+```sh
+make deploy
+```
+
 ## License
 
 Licensed under the [MIT License](http://opensource.org/licenses/MIT).
