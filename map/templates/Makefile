@@ -1,5 +1,2 @@
 deploy:
-	s3cmd sync -P dist/* s3://graphics.texastribune.org/dailies/<%= _.slugify(appname) %>/
-
-dry:
-	s3cmd sync --dry-run dist/* s3://graphics.texastribune.org/dailies/<%= _.slugify(appname) %>/
+	aws s3 sync dist s3://graphics.texastribune.org/dailies/<%= _.slugify(appname) %> --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers --delete
