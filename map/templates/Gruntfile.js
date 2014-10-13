@@ -243,9 +243,13 @@ module.exports = function (grunt) {
       gruntfile: {
         files: ['Gruntfile.js']
       },
+      templates: {
+        files: ['<%= config.app %>/scripts/templates/{,*/}*.html'],
+        tasks: ['jst']
+      },
       html: {
         files: ['<%%= config.app %>/{,*/}*.html'],
-        tasks: ['nunjucks', 'wiredep', 'jst'],
+        tasks: ['nunjucks', 'wiredep'],
         options: {
           livereload: true
         }
