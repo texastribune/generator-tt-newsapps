@@ -18,7 +18,7 @@ module.exports = yeoman.generators.Base.extend({
   askFor: function() {
     var done = this.async();
 
-    this.log(yosay('Welcome to the Texas Tribune News Apps graphics generator!'));
+    this.log(yosay('Welcome to the Texas Tribune News Apps graphic generator!'));
     this.log(chalk.bold.green('Let us begin. I come with SCSS and autoprefixer out of the box. Enjoy!'));
 
     var prompts = [{
