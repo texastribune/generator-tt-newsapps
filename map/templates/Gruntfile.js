@@ -152,6 +152,10 @@ module.exports = function (grunt) {
         'Gruntfile.js',
         '<%%= config.app %>/scripts/{,*/}*.js',
         '!<%%= config.app %>/scripts/vendor/*'
+      ],
+      ignores: [
+        '<%%= config.app %>/scripts/templates.js',
+        '<%%= config.app %>/scripts/pymload.js'
       ]
     },
 
