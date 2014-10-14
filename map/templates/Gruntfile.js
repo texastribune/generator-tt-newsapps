@@ -155,6 +155,17 @@ module.exports = function (grunt) {
       ]
     },
 
+    jst: {
+      compile: {
+        files: {
+        '<%= config.app %>/scripts/templates.js': ['<%= config.app %>/scripts/templates/**/*.html']
+        }
+      },
+      options: {
+        prettify: true
+      }
+    },
+
     nunjucks: {
       options: {
         data: grunt.file.readJSON('data.json')
@@ -233,6 +244,10 @@ module.exports = function (grunt) {
       gruntfile: {
         files: ['Gruntfile.js']
       },
+      templates: {
+        files: ['<%= config.app %>/scripts/templates/{,*/}*.html'],
+        tasks: ['jst']
+      },
       html: {
         files: ['<%%= config.app %>/{,*/}*.html'],
         tasks: ['nunjucks', 'wiredep'],
@@ -272,6 +287,7 @@ module.exports = function (grunt) {
   grunt.registerTask('serve', [
     'clean:server',
     'nunjucks',
+    'jst',
     'wiredep',
     'sass:server',
     'autoprefixer',
@@ -282,6 +298,7 @@ module.exports = function (grunt) {
    grunt.registerTask('build', [
     'clean:dist',
     'nunjucks',
+    'jst',
     'wiredep',
     'useminPrepare',
     'sass:dist',
