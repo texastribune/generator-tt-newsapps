@@ -82,7 +82,7 @@ module.exports = function (grunt) {
         cwd: '<%%= config.app %>',
         dest: '<%%= config.dist %>',
         src: [
-          '*.{json,csv,tsv,geojson}',
+          'data/*.{json,csv,tsv,geojson}',
           '*.{ico,png,txt}',
           'images/{,*/}*.webp',
           'styles/fonts/{,*/}*.*'
