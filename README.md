@@ -30,24 +30,32 @@ So what do you wanna create? Are you developing a web app or a web graphic? The 
 The web app generator is the default. Create the folder you want your project to live in then run the following command inside of it.
 
 ```sh
-$ mkdir YOURCOOLPROJECT
-$ cd YOURCOOLPROJECT
+$ mkdir <project-name>
+$ cd <project-name>
 $ yo tt-newsapps
 ```
 
 If you are creating a web graphic, use this command instead.
 
 ```sh
-$ mkdir YOURCOOLPROJECT
-$ cd YOURCOOLPROJECT
-$ yo tt-newsapps:graphics
+$ mkdir <project-name>
+$ cd <project-name>
+$ yo tt-newsapps:graphic
+```
+
+How about a map?
+
+```sh
+$ mkdir <project-name>
+$ cd <project-name>
+$ yo tt-newsapps:map
 ```
 
 After installing, run `grunt serve` to preview what you generator has set up. Now get to work! When it comes time to ship to production, use `grunt build` to prepare `dist` folder.
 
 ## Deployment
 
-For deloyment you will need `aws-cli`. Follow [this](http://docs.aws.amazon.com/cli/latest/userguide/installing.html) guide to install it and when ready, just run:
+You'll need `aws-cli` for deployment. [Install it](http://docs.aws.amazon.com/cli/latest/userguide/installing.html), then run:
 
 ```sh
 make deploy
