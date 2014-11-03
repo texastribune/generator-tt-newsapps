@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ META.project_name }} | The Texas Tribune</title>
+  <meta name="description" content="{{ META.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.css' rel='stylesheet'/>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+</head>
+<body>
+
+<header>
+  <h1>{{ META.project_name }}</h1>
+</header>
+
+<div id="graphic" class="graphic">
+
+</div>
+
+<footer>
+  <div>Source{{ 's' if sources.length > 1 else '' }}: {% for source in sources %}<a href="{{ source.url }}" target="_blank">{{ source.name }}</a> {% if not loop.last %} | {% endif %}{% endfor %}</div>
+  <div>Produced by {% for author in authors %}<a href="{{ author.url }}">{{ author.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</div>
+</footer>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/main.js"></script>
+<script src="scripts/pymload.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

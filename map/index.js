@@ -34,6 +34,10 @@ module.exports = yeoman.generators.Base.extend({
     }.bind(this));
   },
 
+  makefile: function() {
+    this.template('Makefile');
+  },
+
   gruntfile: function() {
     this.template('Gruntfile.js');
   },
@@ -42,12 +46,12 @@ module.exports = yeoman.generators.Base.extend({
     this.template('_package.json', 'package.json');
   },
 
-  bowerJSON: function() {
-    this.template('_bower.json', 'bower.json');
-  },
-
   bowerrc: function() {
     this.template('_bowerrc', '.bowerrc');
+  },
+
+  bowerJSON: function() {
+    this.template('_bower.json', 'bower.json');
   },
 
   git: function() {

@@ -1,6 +1,6 @@
 {
   "name": "generator-tt-newsapps",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Scaffold out a Texas Tribune web app or graphic.",
   "license": "MIT",
   "repository": "texastribune/generator-tt-newsapps",

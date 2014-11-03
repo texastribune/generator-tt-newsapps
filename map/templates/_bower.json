@@ -1,0 +1,8 @@
+{
+  "name": "<%= _.slugify(appname) %>",
+  "private": true,
+  "dependencies": {
+    "newsapps-styles": "texastribune/newsapps-styles#0.4",
+    "pym.js": "~0.3.1"
+  }
+}
