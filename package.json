@@ -12,7 +12,8 @@
   },
   "files": [
     "app",
-    "graphics"
+    "graphic",
+    "map"
   ],
   "keywords": [
     "yeoman-generator",
