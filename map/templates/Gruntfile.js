@@ -162,7 +162,7 @@ module.exports = function (grunt) {
     jst: {
       compile: {
         files: {
-        '<%= config.app %>/scripts/templates.js': ['<%= config.app %>/scripts/templates/**/*.html']
+        '<%%= config.app %>/scripts/templates.js': ['<%%= config.app %>/scripts/templates/**/*.html']
         }
       },
       options: {
