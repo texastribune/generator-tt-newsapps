@@ -2,7 +2,7 @@
   "name": "<%= _.slugify(appname) %>",
   "private": true,
   "dependencies": {
-    "newsapps-styles": "texastribune/newsapps-styles#0.4",
+    "newsapps-styles": "texastribune/newsapps-styles#0.5",
     "pym.js": "~0.3.1"
   }
 }
